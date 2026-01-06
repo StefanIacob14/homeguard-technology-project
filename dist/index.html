@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Google Fonts "OUTFIT" + "Roboto" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/homeguard-technology-project/assets/HomeGuard_Technology_logo_tab-BPQZyhZc.png" />
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" crossorigin href="/homeguard-technology-project/assets/index-l5bPqASY.css">
+  </head>
+
+  <body class="bg-gluon-grey font-outfit text-light-grey">
+    <!-- HEADER SECTION start -->
+    <header class="flex items-center justify-between m-5">
+      <!-- HEADER FIRST SECTION start -->
+      <!-- HEADER LOGO start -->
+      <div class="flex flex-1 items-center">
+        <a href="www.homeguardtech.ro">
+          <img
+            class="w-35 cursor-pointer max-2xl:w-30"
+            src="/homeguard-technology-project/assets/HomeGuard_Technology_logo_white_orange-BvVg6QHr.png"
+            alt="HomeGuard Technology Logo"
+          />
+        </a>
+        <!-- HEADER LOGO end -->
+      </div>
+      <!-- HEADER FIRST SECTION end -->
+
+      <!-- HEADER MIDDLE SECTION start -->
+      <div
+        class="flex items-center gap-7 bg-slate-grey p-2 rounded-2xl px-4 max-2xl:gap-5 max-xl:gap-3"
+      >
+        <button
+          class="bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/dashboard">Dashboard</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/rooms">Rooms</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/devices">Devices</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/family">Family</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/reports">Reports</a>
+        </button>
+      </div>
+      <!-- HEADER MIDDLE SECTION end -->
+
+      <!-- HEADER RIGHT SECTION start -->
+      <div class="flex flex-1 items-center justify-end gap-5 max-xl:gap-3">
+        <button
+          class="bg-slate-grey p-3.5 rounded-full cursor-pointer hover:bg-orange transition duration-300 max-xl:p-2.5"
+        >
+          <a href="/mail">
+            <img
+              class="size-5 max-xl:size-4.5"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M3%203H21C21.5523%203%2022%203.44772%2022%204V20C22%2020.5523%2021.5523%2021%2021%2021H3C2.44772%2021%202%2020.5523%202%2020V4C2%203.44772%202.44772%203%203%203ZM12.0606%2011.6829L5.64722%206.2377L4.35278%207.7623L12.0731%2014.3171L19.6544%207.75616L18.3456%206.24384L12.0606%2011.6829Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Mail"
+            />
+          </a>
+        </button>
+
+        <button
+          class="relative bg-slate-grey p-3.5 rounded-full cursor-pointer hover:bg-orange transition duration-300 max-xl:p-2.5"
+        >
+          <a href="/notifications">
+            <img
+              class="size-5 max-xl:size-5"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M20%2017H22V19H2V17H4V10C4%205.58172%207.58172%202%2012%202C16.4183%202%2020%205.58172%2020%2010V17ZM9%2021H15V23H9V21Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Notifications"
+            />
+          </a>
+
+          <div
+            class="absolute top-3 right-3.5 bg-red-500 rounded-full size-2 cursor-pointer max-xl:size-1.5 max-xl:top-2.5 max-xl:right-2.5"
+          ></div>
+        </button>
+
+        <button
+          class="bg-orange py-2 px-3 rounded-2xl inset-shadow-[-3px_-3px_5px] inset-shadow-black/50 hover:inset-shadow-[-4.5px_-4.5px_5px] transition duration-300 cursor-pointer max-xl:hidden"
+        >
+          <a class="flex items-center max-xl:text-[0.8rem]" href="/new-device"
+            ><span class="text-2xl mr-1.5 max-xl:mr-1 max-xl:text-[0.9rem]"
+              >+</span
+            >Add Device</a
+          >
+        </button>
+
+        <!-- HEADER RIGHT SECTION User Profile start -->
+        <div
+          class="flex items-center justify-between gap-3 bg-slate-grey rounded-2xl px-2.5 py-1.5 hover:bg-orange transition duration-300 max-xl:gap-2"
+        >
+          <img
+            class="size-11 rounded-xl cursor-pointer max-xl:size-10"
+            src="/homeguard-technology-project/assets/beautiful_woman_portret-BTEXKKdB.jpg"
+            alt="User Profile"
+          />
+          <div>
+            <p
+              class="font-semibold cursor-pointer hover:underline max-xl:text-[0.9rem]"
+            >
+              Aliss Parker
+            </p>
+            <p
+              class="font-light text-[0.8rem] cursor-pointer hover:underline max-xl:text-[0.7rem]"
+            >
+              @aliss_park97
+            </p>
+          </div>
+          <img
+            class="size-5 cursor-pointer hover:scale-110 transition duration-150"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M11.9999%2013.1714L16.9497%208.22168L18.3639%209.63589L11.9999%2015.9999L5.63599%209.63589L7.0502%208.22168L11.9999%2013.1714Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="More Details"
+          />
+        </div>
+        <!-- HEADER RIGHT SECTION User Profile end -->
+      </div>
+      <!-- HEADER RIGHT SECTION end -->
+    </header>
+    <!-- HEADER SECTION end -->
+
+    <!-- ASIDE SECTION start -->
+    <aside
+      class="absolute -z-10 left-0 bottom-0 top-0 w-45.5 pt-26 pb-5 bg-slate-grey flex flex-col items-center justify-between max-2xl:w-40"
+    >
+      <div
+        class="flex flex-col gap-10 w-40 border-t border-t-dark-grey/25 pt-10 px-3"
+      >
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M0.689453%206.99659C3.78027%204.49704%207.71526%203%2011.9999%203C16.2845%203%2020.2195%204.49704%2023.3104%206.99659L22.0536%208.55252C19.3062%206.3307%2015.8085%205%2011.9999%205C8.19133%205%204.69356%206.3307%201.94617%208.55252L0.689453%206.99659ZM3.83124%2010.8864C6.0635%209.08119%208.90544%208%2011.9999%208C15.0944%208%2017.9363%209.08119%2020.1686%2010.8864L18.9118%2012.4424C17.023%2010.9149%2014.6183%2010%2011.9999%2010C9.38151%2010%206.97679%2010.9149%205.08796%2012.4424L3.83124%2010.8864ZM6.97304%2014.7763C8.34673%2013.6653%2010.0956%2013%2011.9999%2013C13.9042%2013%2015.6531%2013.6653%2017.0268%2014.7763L15.7701%2016.3322C14.7398%2015.499%2013.4281%2015%2011.9999%2015C10.5717%2015%209.26002%2015.499%208.22975%2016.3322L6.97304%2014.7763ZM10.1148%2018.6661C10.63%2018.2495%2011.2858%2018%2011.9999%2018C12.714%2018%2013.3698%2018.2495%2013.885%2018.6661L11.9999%2021L10.1148%2018.6661Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Wi-Fi"
+          />
+          <a href="/connection">Connection</a>
+        </div>
+
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M3.78307%202.82598L12%201L20.2169%202.82598C20.6745%202.92766%2021%203.33347%2021%203.80217V13.7889C21%2015.795%2019.9974%2017.6684%2018.3282%2018.7812L12%2023L5.6718%2018.7812C4.00261%2017.6684%203%2015.795%203%2013.7889V3.80217C3%203.33347%203.32553%202.92766%203.78307%202.82598ZM5%204.60434V13.7889C5%2015.1263%205.6684%2016.3752%206.7812%2017.1171L12%2020.5963L17.2188%2017.1171C18.3316%2016.3752%2019%2015.1263%2019%2013.7889V4.60434L12%203.04879L5%204.60434Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Security"
+          />
+          <a href="/security">Security</a>
+        </div>
+
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M7%203V1H9V3H15V1H17V3H21C21.5523%203%2022%203.44772%2022%204V9H20V5H17V7H15V5H9V7H7V5H4V19H10V21H3C2.44772%2021%202%2020.5523%202%2020V4C2%203.44772%202.44772%203%203%203H7ZM17%2012C14.7909%2012%2013%2013.7909%2013%2016C13%2018.2091%2014.7909%2020%2017%2020C19.2091%2020%2021%2018.2091%2021%2016C21%2013.7909%2019.2091%2012%2017%2012ZM11%2016C11%2012.6863%2013.6863%2010%2017%2010C20.3137%2010%2023%2012.6863%2023%2016C23%2019.3137%2020.3137%2022%2017%2022C13.6863%2022%2011%2019.3137%2011%2016ZM16%2013V16.4142L18.2929%2018.7071L19.7071%2017.2929L18%2015.5858V13H16Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Events"
+          />
+          <a href="/events">Events</a>
+        </div>
+
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M5%203V19H21V21H3V3H5ZM20.2929%206.29289L21.7071%207.70711L16%2013.4142L13%2010.415L8.70711%2014.7071L7.29289%2013.2929L13%207.58579L16%2010.585L20.2929%206.29289Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Statistics"
+          />
+          <a href="/statistics">Statistics</a>
+        </div>
+
+        <div class="flex flex-col gap-10 mt-10">
+          <div
+            class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              class="size-5"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M3.33946%2017.0002C2.90721%2016.2515%202.58277%2015.4702%202.36133%2014.6741C3.3338%2014.1779%203.99972%2013.1668%203.99972%2012.0002C3.99972%2010.8345%203.3348%209.824%202.36353%209.32741C2.81025%207.71651%203.65857%206.21627%204.86474%204.99001C5.7807%205.58416%206.98935%205.65534%207.99972%205.072C9.01009%204.48866%209.55277%203.40635%209.4962%202.31604C11.1613%201.8846%2012.8847%201.90004%2014.5031%202.31862C14.4475%203.40806%2014.9901%204.48912%2015.9997%205.072C17.0101%205.65532%2018.2187%205.58416%2019.1346%204.99007C19.7133%205.57986%2020.2277%206.25151%2020.66%207.00021C21.0922%207.7489%2021.4167%208.53025%2021.6381%209.32628C20.6656%209.82247%2019.9997%2010.8336%2019.9997%2012.0002C19.9997%2013.166%2020.6646%2014.1764%2021.6359%2014.673C21.1892%2016.2839%2020.3409%2017.7841%2019.1347%2019.0104C18.2187%2018.4163%2017.0101%2018.3451%2015.9997%2018.9284C14.9893%2019.5117%2014.4467%2020.5941%2014.5032%2021.6844C12.8382%2022.1158%2011.1148%2022.1004%209.49633%2021.6818C9.55191%2020.5923%209.00929%2019.5113%207.99972%2018.9284C6.98938%2018.3451%205.78079%2018.4162%204.86484%2019.0103C4.28617%2018.4205%203.77172%2017.7489%203.33946%2017.0002ZM8.99972%2017.1964C10.0911%2017.8265%2010.8749%2018.8227%2011.2503%2019.9659C11.7486%2020.0133%2012.2502%2020.014%2012.7486%2019.9675C13.1238%2018.8237%2013.9078%2017.8268%2014.9997%2017.1964C16.0916%2016.5659%2017.347%2016.3855%2018.5252%2016.6324C18.8146%2016.224%2019.0648%2015.7892%2019.2729%2015.334C18.4706%2014.4373%2017.9997%2013.2604%2017.9997%2012.0002C17.9997%2010.74%2018.4706%209.5632%2019.2729%208.6665C19.1688%208.4405%2019.0538%208.21822%2018.9279%208.00021C18.802%207.78219%2018.667%207.57148%2018.5233%207.36842C17.3457%207.61476%2016.0911%207.43414%2014.9997%206.80405C13.9083%206.17395%2013.1246%205.17768%2012.7491%204.03455C12.2509%203.98714%2011.7492%203.98646%2011.2509%204.03292C10.8756%205.17671%2010.0916%206.17364%208.99972%206.80405C7.9078%207.43447%206.65245%207.61494%205.47428%207.36803C5.18485%207.77641%204.93463%208.21117%204.72656%208.66637C5.52881%209.56311%205.99972%2010.74%205.99972%2012.0002C5.99972%2013.2604%205.52883%2014.4372%204.72656%2015.3339C4.83067%2015.5599%204.94564%2015.7822%205.07152%2016.0002C5.19739%2016.2182%205.3324%2016.4289%205.47612%2016.632C6.65377%2016.3857%207.90838%2016.5663%208.99972%2017.1964ZM11.9997%2015.0002C10.3429%2015.0002%208.99972%2013.6571%208.99972%2012.0002C8.99972%2010.3434%2010.3429%209.00021%2011.9997%209.00021C13.6566%209.00021%2014.9997%2010.3434%2014.9997%2012.0002C14.9997%2013.6571%2013.6566%2015.0002%2011.9997%2015.0002ZM11.9997%2013.0002C12.552%2013.0002%2012.9997%2012.5525%2012.9997%2012.0002C12.9997%2011.4479%2012.552%2011.0002%2011.9997%2011.0002C11.4474%2011.0002%2010.9997%2011.4479%2010.9997%2012.0002C10.9997%2012.5525%2011.4474%2013.0002%2011.9997%2013.0002Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Settings"
+            />
+            <a href="/settings">Settings</a>
+          </div>
+
+          <div
+            class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              class="size-5"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M12%2022C6.47715%2022%202%2017.5228%202%2012C2%206.47715%206.47715%202%2012%202C17.5228%202%2022%206.47715%2022%2012C22%2017.5228%2017.5228%2022%2012%2022ZM12%2020C16.4183%2020%2020%2016.4183%2020%2012C20%207.58172%2016.4183%204%2012%204C7.58172%204%204%207.58172%204%2012C4%2016.4183%207.58172%2020%2012%2020ZM11%2015H13V17H11V15ZM13%2013.3551V14H11V12.5C11%2011.9477%2011.4477%2011.5%2012%2011.5C12.8284%2011.5%2013.5%2010.8284%2013.5%2010C13.5%209.17157%2012.8284%208.5%2012%208.5C11.2723%208.5%2010.6656%209.01823%2010.5288%209.70577L8.56731%209.31346C8.88637%207.70919%2010.302%206.5%2012%206.5C13.933%206.5%2015.5%208.067%2015.5%2010C15.5%2011.5855%2014.4457%2012.9248%2013%2013.3551Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Support"
+            />
+            <a href="/support">Support</a>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="bg-orange py-2 px-3 rounded-2xl inset-shadow-[-3px_-3px_5px] inset-shadow-black/50 hover:inset-shadow-[-4.5px_-4.5px_5px] transition duration-300 cursor-pointer invisible max-xl:visible max-xl:mt-65"
+      >
+        <a class="flex items-center max-xl:text-[0.8rem]" href="/new-device"
+          ><span class="text-2xl mr-1.5 max-xl:mr-1 max-xl:text-[0.9rem]"
+            >+</span
+          >Add Device</a
+        >
+      </button>
+
+      <div
+        class="flex items-center justify-between gap-4 p-1.5 px-2.5 border-2 border-dark-grey/25 rounded-2xl max-xl:px-3.5 max-xl:gap-5"
+      >
+        <img
+          class="size-8 bg-orange p-2 rounded-xl cursor-pointer inset-shadow-[-2px_-2px_5px] inset-shadow-black/50"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M10%207C10%2010.866%2013.134%2014%2017%2014C18.9584%2014%2020.729%2013.1957%2021.9995%2011.8995C22%2011.933%2022%2011.9665%2022%2012C22%2017.5228%2017.5228%2022%2012%2022C6.47715%2022%202%2017.5228%202%2012C2%206.47715%206.47715%202%2012%202C12.0335%202%2012.067%202%2012.1005%202.00049C10.8043%203.27098%2010%205.04157%2010%207ZM4%2012C4%2016.4183%207.58172%2020%2012%2020C15.0583%2020%2017.7158%2018.2839%2019.062%2015.7621C18.3945%2015.9187%2017.7035%2016%2017%2016C12.0294%2016%208%2011.9706%208%207C8%206.29648%208.08133%205.60547%208.2379%204.938C5.71611%206.28423%204%208.9417%204%2012Z'%3e%3c/path%3e%3c/svg%3e"
+          alt="Dark Mode"
+        />
+        <img
+          class="size-5 cursor-pointer"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M12%2018C8.68629%2018%206%2015.3137%206%2012C6%208.68629%208.68629%206%2012%206C15.3137%206%2018%208.68629%2018%2012C18%2015.3137%2015.3137%2018%2012%2018ZM12%2016C14.2091%2016%2016%2014.2091%2016%2012C16%209.79086%2014.2091%208%2012%208C9.79086%208%208%209.79086%208%2012C8%2014.2091%209.79086%2016%2012%2016ZM11%201H13V4H11V1ZM11%2020H13V23H11V20ZM3.51472%204.92893L4.92893%203.51472L7.05025%205.63604L5.63604%207.05025L3.51472%204.92893ZM16.9497%2018.364L18.364%2016.9497L20.4853%2019.0711L19.0711%2020.4853L16.9497%2018.364ZM19.0711%203.51472L20.4853%204.92893L18.364%207.05025L16.9497%205.63604L19.0711%203.51472ZM5.63604%2016.9497L7.05025%2018.364L4.92893%2020.4853L3.51472%2019.0711L5.63604%2016.9497ZM23%2011V13H20V11H23ZM4%2011V13H1V11H4Z'%3e%3c/path%3e%3c/svg%3e"
+          alt="Light Mode"
+        />
+      </div>
+    </aside>
+    <!-- ASIDE SECTION end -->
+
+    <!-- MAIN SECTION start -->
+    <main
+      class="absolute right-5.5 bottom-5 h-[88.5%] w-[89%] grid grid-cols-6 gap-2 max-xl:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]"
+    >
+      <!-- MAIN SECTION WELCOME / WEATHER CELL start -->
+      <div
+        class="flex flex-col justify-between items-start bg-slate-grey h-114 col-span-2 row-span-2 rounded-2xl max-2xl:ml-6 max-xl:ml-13 max-xl:order-1"
+      >
+        <div
+          class="text-5xl leading-13 mx-5 mt-3 pointer-events-none max-2xl:text-4xl"
+        >
+          <p>Good evening, Aliss!</p>
+          <p class="text-[1.2rem] italic max-2xl:text-[1.1rem]">
+            "We hope you have a wonderful day!"
+          </p>
+        </div>
+
+        <!-- MAIN SECTION WEATHER start -->
+        <div
+          class="relative flex flex-col justify-evenly bg-gluon-grey self-center m-5 w-[93%] h-[70%] rounded-2xl max-2xl:w-[96%]"
+        >
+          <a class="absolute top-1.5 right-1.5" href="/weather">
+            <img
+              class="size-5 rotate-225 opacity-25 cursor-pointer hover:opacity-100 transition duration-300"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M11.9999%2013.1714L16.9497%208.22168L18.3639%209.63589L11.9999%2015.9999L5.63599%209.63589L7.0502%208.22168L11.9999%2013.1714Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="More Details"
+            />
+          </a>
+
+          <div class="flex items-center justify-evenly gap-1.5">
+            <div class="flex flex-col gap-1.5">
+              <img
+                class="size-14 self-center max-2xl:size-12"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M14%2018V16H17.5C19.433%2016%2021%2014.433%2021%2012.5C21%2010.567%2019.433%209%2017.5%209C16.5205%209%2015.6351%209.40232%2014.9998%2010.0507C14.9999%2010.0338%2015%2010.0169%2015%2010C15%206.68629%2012.3137%204%209%204C5.68629%204%203%206.68629%203%2010V10.0069H1V10C1%205.58172%204.58172%202%209%202C12.3949%202%2015.2959%204.11466%2016.4576%207.09864C16.7951%207.0339%2017.1436%207%2017.5%207C20.5376%207%2023%209.46243%2023%2012.5C23%2015.5376%2020.5376%2018%2017.5%2018H14ZM6%2020H16V22H6V20ZM6%2012H14V14H6V12ZM2%2016H12V18H2V16Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Cloud Windy"
+              />
+              <p
+                class="pointer-events-none max-2xl:text-[0.9rem] max-xl:text-[0.8rem]"
+              >
+                Cloud Windy
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <div class="flex items-center gap-1.5">
+                <img
+                  class="size-13 max-2xl:size-11"
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M7.05025%208.04673L12%203.09698L16.9497%208.04673C19.6834%2010.7804%2019.6834%2015.2126%2016.9497%2017.9462C14.2161%2020.6799%209.78392%2020.6799%207.05025%2017.9462C4.31658%2015.2126%204.31658%2010.7804%207.05025%208.04673ZM18.364%206.63252L12%200.268555L5.63604%206.63252C2.12132%2010.1472%202.12132%2015.8457%205.63604%2019.3604C9.15076%2022.8752%2014.8492%2022.8752%2018.364%2019.3604C21.8787%2015.8457%2021.8787%2010.1472%2018.364%206.63252ZM16.2427%2010.1714L14.8285%208.75718L7.7574%2015.8282L9.17161%2017.2425L16.2427%2010.1714ZM8.11095%2011.232C8.69674%2011.8178%209.64648%2011.8178%2010.2323%2011.232C10.8181%2010.6463%2010.8181%209.69652%2010.2323%209.11073C9.64648%208.52494%208.69674%208.52494%208.11095%209.11073C7.52516%209.69652%207.52516%2010.6463%208.11095%2011.232ZM15.8891%2016.8889C15.3033%2017.4747%2014.3536%2017.4747%2013.7678%2016.8889C13.182%2016.3031%2013.182%2015.3534%2013.7678%2014.7676C14.3536%2014.1818%2015.3033%2014.1818%2015.8891%2014.7676C16.4749%2015.3534%2016.4749%2016.3031%2015.8891%2016.8889Z'%3e%3c/path%3e%3c/svg%3e"
+                  alt="Humidity"
+                />
+                <p
+                  class="text-4xl font-semibold pointer-events-none max-2xl:text-3xl"
+                >
+                  65%
+                </p>
+              </div>
+              <p
+                class="self-center pointer-events-none max-2xl:text-[0.9rem] max-xl:text-[0.8rem]"
+              >
+                Humidity
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <p
+                class="text-5xl font-semibold self-center pointer-events-none max-2xl:text-4xl"
+              >
+                7 &#8451;
+              </p>
+              <div class="flex items-center gap-1.5">
+                <img
+                  class="size-4"
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M12%2023.7279L5.63604%2017.364C2.12132%2013.8492%202.12132%208.15076%205.63604%204.63604C9.15076%201.12132%2014.8492%201.12132%2018.364%204.63604C21.8787%208.15076%2021.8787%2013.8492%2018.364%2017.364L12%2023.7279ZM16.9497%2015.9497C19.6834%2013.2161%2019.6834%208.78392%2016.9497%206.05025C14.2161%203.31658%209.78392%203.31658%207.05025%206.05025C4.31658%208.78392%204.31658%2013.2161%207.05025%2015.9497L12%2020.8995L16.9497%2015.9497ZM12%2013C10.8954%2013%2010%2012.1046%2010%2011C10%209.89543%2010.8954%209%2012%209C13.1046%209%2014%209.89543%2014%2011C14%2012.1046%2013.1046%2013%2012%2013Z'%3e%3c/path%3e%3c/svg%3e"
+                  alt="Location"
+                />
+                <a href="/weather/montana/helena">
+                  <p
+                    class="cursor-pointer hover:underline max-2xl:text-[0.9rem] max-xl:text-[0.8rem]"
+                  >
+                    Helena, Montana
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAIN SECTION WEATHER ON HOURS start -->
+          <div class="flex items-center gap-1.5 self-center max-xl:gap-2">
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">12 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M14%2018V16H17.5C19.433%2016%2021%2014.433%2021%2012.5C21%2010.567%2019.433%209%2017.5%209C16.5205%209%2015.6351%209.40232%2014.9998%2010.0507C14.9999%2010.0338%2015%2010.0169%2015%2010C15%206.68629%2012.3137%204%209%204C5.68629%204%203%206.68629%203%2010V10.0069H1V10C1%205.58172%204.58172%202%209%202C12.3949%202%2015.2959%204.11466%2016.4576%207.09864C16.7951%207.0339%2017.1436%207%2017.5%207C20.5376%207%2023%209.46243%2023%2012.5C23%2015.5376%2020.5376%2018%2017.5%2018H14ZM6%2020H16V22H6V20ZM6%2012H14V14H6V12ZM2%2016H12V18H2V16Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Cloud Windy"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">7 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">13 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M14%2018V16H17.5C19.433%2016%2021%2014.433%2021%2012.5C21%2010.567%2019.433%209%2017.5%209C16.5205%209%2015.6351%209.40232%2014.9998%2010.0507C14.9999%2010.0338%2015%2010.0169%2015%2010C15%206.68629%2012.3137%204%209%204C5.68629%204%203%206.68629%203%2010V10.0069H1V10C1%205.58172%204.58172%202%209%202C12.3949%202%2015.2959%204.11466%2016.4576%207.09864C16.7951%207.0339%2017.1436%207%2017.5%207C20.5376%207%2023%209.46243%2023%2012.5C23%2015.5376%2020.5376%2018%2017.5%2018H14ZM6%2020H16V22H6V20ZM6%2012H14V14H6V12ZM2%2016H12V18H2V16Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Cloud Windy"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">7 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">14 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M14%2018V16H17.5C19.433%2016%2021%2014.433%2021%2012.5C21%2010.567%2019.433%209%2017.5%209C16.5205%209%2015.6351%209.40232%2014.9998%2010.0507C14.9999%2010.0338%2015%2010.0169%2015%2010C15%206.68629%2012.3137%204%209%204C5.68629%204%203%206.68629%203%2010V10.0069H1V10C1%205.58172%204.58172%202%209%202C12.3949%202%2015.2959%204.11466%2016.4576%207.09864C16.7951%207.0339%2017.1436%207%2017.5%207C20.5376%207%2023%209.46243%2023%2012.5C23%2015.5376%2020.5376%2018%2017.5%2018H14ZM6%2020H16V22H6V20ZM6%2012H14V14H6V12ZM2%2016H12V18H2V16Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Cloud Windy"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">6 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">15 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M5%2016.9297C2.60879%2015.5465%201%2012.9611%201%2010C1%205.58172%204.58172%202%209%202C12.3949%202%2015.2959%204.11466%2016.4576%207.09864C16.7951%207.0339%2017.1436%207%2017.5%207C20.5376%207%2023%209.46243%2023%2012.5C23%2015.0176%2021.3085%2017.14%2019%2017.793V15.6632C20.1825%2015.1015%2021%2013.8962%2021%2012.5C21%2010.567%2019.433%209%2017.5%209C16.5205%209%2015.6351%209.40232%2014.9998%2010.0507C14.9999%2010.0338%2015%2010.0169%2015%2010C15%206.68629%2012.3137%204%209%204C5.68629%204%203%206.68629%203%2010C3%2011.777%203.7725%2013.3736%205%2014.4722V16.9297ZM7%2014H9V20H7V14ZM15%2014H17V20H15V14ZM11%2017H13V23H11V17Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">6 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">16 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M5%2016.9297C2.60879%2015.5465%201%2012.9611%201%2010C1%205.58172%204.58172%202%209%202C12.3949%202%2015.2959%204.11466%2016.4576%207.09864C16.7951%207.0339%2017.1436%207%2017.5%207C20.5376%207%2023%209.46243%2023%2012.5C23%2015.0176%2021.3085%2017.14%2019%2017.793V15.6632C20.1825%2015.1015%2021%2013.8962%2021%2012.5C21%2010.567%2019.433%209%2017.5%209C16.5205%209%2015.6351%209.40232%2014.9998%2010.0507C14.9999%2010.0338%2015%2010.0169%2015%2010C15%206.68629%2012.3137%204%209%204C5.68629%204%203%206.68629%203%2010C3%2011.777%203.7725%2013.3736%205%2014.4722V16.9297ZM7%2014H9V20H7V14ZM15%2014H17V20H15V14ZM11%2017H13V23H11V17Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">5 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15 max-xl:hidden"
+            >
+              <p class="max-2xl:text-[0.9rem]">17 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M9.5%206C5.91015%206%203%208.91015%203%2012.5C3%2016.0899%205.91015%2019%209.5%2019H16.5C18.9853%2019%2021%2016.9853%2021%2014.5C21%2012.0147%2018.9853%2010%2016.5%2010C16.1717%2010%2015.8516%2010.0352%2015.5433%2010.1019C14.589%207.69894%2012.2429%206%209.5%206ZM16.5%2021H9.5C4.80558%2021%201%2017.1944%201%2012.5C1%207.80558%204.80558%204%209.5%204C12.5433%204%2015.2131%205.59939%2016.7146%208.00348C20.2051%208.11671%2023%2010.982%2023%2014.5C23%2018.0899%2020.0899%2021%2016.5%2021Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">5 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:hidden"
+            >
+              <p class="max-2xl:text-[0.9rem]">18 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M9.5%206C5.91015%206%203%208.91015%203%2012.5C3%2016.0899%205.91015%2019%209.5%2019H16.5C18.9853%2019%2021%2016.9853%2021%2014.5C21%2012.0147%2018.9853%2010%2016.5%2010C16.1717%2010%2015.8516%2010.0352%2015.5433%2010.1019C14.589%207.69894%2012.2429%206%209.5%206ZM16.5%2021H9.5C4.80558%2021%201%2017.1944%201%2012.5C1%207.80558%204.80558%204%209.5%204C12.5433%204%2015.2131%205.59939%2016.7146%208.00348C20.2051%208.11671%2023%2010.982%2023%2014.5C23%2018.0899%2020.0899%2021%2016.5%2021Z'%3e%3c/path%3e%3c/svg%3e"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">6 &#8451;</p>
+            </div>
+          </div>
+          <!-- MAIN SECTION WEATHER ON HOURS end -->
+        </div>
+        <!-- MAIN SECTION WEATHER end -->
+      </div>
+      <!-- MAIN SECTION WELCOME / WEATHER CELL end -->
+
+      <!-- MAIN SECTION FRONT DOOR LOCKER CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-6"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="bg-green-500 size-2 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Front Door
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/okos/products"
+            >Smart Door Lock <br />
+            OKOS OK31</a
+          >
+        </div>
+
+        <div
+          class="absolute bottom-2 left-2 flex items-center gap-2 max-2xl:gap-1"
+        >
+          <div class="bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12">
+            <button
+              class="bg-orange ml-5 size-5 rounded-full cursor-pointer focus:bg-dark-grey focus:-translate-x-full transition duration-300 max-2xl:ml-4"
+            ></button>
+          </div>
+
+          <p
+            class="text-[0.9rem] opacity-50 italic pointer-events-none max-2xl:text-[0.8rem]"
+          >
+            *Locked
+          </p>
+        </div>
+
+        <img
+          class="absolute bottom-2 right-2 h-45 drop-shadow-xl drop-shadow-light-grey/5 max-2xl:h-33 max-2xl:bottom-4 max-2xl:right-1"
+          src="/homeguard-technology-project/assets/smart_door_locker_img-BzmSI9a3.png"
+          alt="Door Locker"
+        />
+      </div>
+      <!-- MAIN SECTION FRONT DOOR LOCKER CELL end -->
+
+      <!-- MAIN SECTION CAMERA CELL start -->
+      <div
+        class="relative bg-slate-grey h-114 col-span-3 row-span-2 rounded-2xl overflow-hidden max-xl:order-2"
+      >
+        <div
+          class="bg-[url(image_icon/images/modern_living_room_interior.jpg)] bg-cover h-full w-full bg-bottom"
+        ></div>
+
+        <div
+          class="absolute top-4 left-4 flex items-center gap-1.5 bg-gluon-grey/60 py-2 px-3 rounded-2xl"
+        >
+          <div class="bg-red-500 rounded-full size-2 animate-pulse"></div>
+          <p
+            class="font-bold text-light-grey text-[1.1rem] pointer-events-none"
+          >
+            Live
+          </p>
+        </div>
+
+        <div class="absolute top-4 right-4 bg-gluon-grey/60 p-3 rounded-2xl">
+          <img
+            class="size-5 cursor-pointer"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M16%203H22V9H20V5H16V3ZM2%203H8V5H4V9H2V3ZM20%2019V15H22V21H16V19H20ZM4%2019H8V21H2V15H4V19Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Full Screen"
+          />
+        </div>
+
+        <div class="absolute bottom-4 right-4 bg-gluon-grey/60 p-2 rounded-2xl">
+          <img
+            class="size-8 cursor-pointer"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M12%202L16.2426%206.24264L14.8284%207.65685L12%204.82843L9.17157%207.65685L7.75736%206.24264L12%202ZM2%2012L6.24264%207.75736L7.65685%209.17157L4.82843%2012L7.65685%2014.8284L6.24264%2016.2426L2%2012ZM22%2012L17.7574%2016.2426L16.3431%2014.8284L19.1716%2012L16.3431%209.17157L17.7574%207.75736L22%2012ZM12%2014C10.8954%2014%2010%2013.1046%2010%2012C10%2010.8954%2010.8954%2010%2012%2010C13.1046%2010%2014%2010.8954%2014%2012C14%2013.1046%2013.1046%2014%2012%2014ZM12%2022L7.75736%2017.7574L9.17157%2016.3431L12%2019.1716L14.8284%2016.3431L16.2426%2017.7574L12%2022Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Move"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-4 right-20 bg-gluon-grey/60 p-2 rounded-2xl"
+        >
+          <img
+            class="size-6 cursor-pointer"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M10%207.22056L6.60282%2010.0001H3V14.0001H6.60282L10%2016.7796V7.22056ZM5.88889%2016.0001H2C1.44772%2016.0001%201%2015.5524%201%2015.0001V9.00007C1%208.44778%201.44772%208.00007%202%208.00007H5.88889L11.1834%203.66821C11.3971%203.49335%2011.7121%203.52485%2011.887%203.73857C11.9601%203.8279%2012%203.93977%2012%204.05519V19.9449C12%2020.2211%2011.7761%2020.4449%2011.5%2020.4449C11.3846%2020.4449%2011.2727%2020.405%2011.1834%2020.3319L5.88889%2016.0001ZM20.4142%2012.0001L23.9497%2015.5356L22.5355%2016.9498L19%2013.4143L15.4645%2016.9498L14.0503%2015.5356L17.5858%2012.0001L14.0503%208.46454L15.4645%207.05032L19%2010.5859L22.5355%207.05032L23.9497%208.46454L20.4142%2012.0001Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Microphone"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-4 right-32 bg-gluon-grey/60 p-2 rounded-2xl"
+        >
+          <img
+            class="size-6 cursor-pointer"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M11.9998%203C10.3429%203%208.99976%204.34315%208.99976%206V10C8.99976%2011.6569%2010.3429%2013%2011.9998%2013C13.6566%2013%2014.9998%2011.6569%2014.9998%2010V6C14.9998%204.34315%2013.6566%203%2011.9998%203ZM11.9998%201C14.7612%201%2016.9998%203.23858%2016.9998%206V10C16.9998%2012.7614%2014.7612%2015%2011.9998%2015C9.23833%2015%206.99976%2012.7614%206.99976%2010V6C6.99976%203.23858%209.23833%201%2011.9998%201ZM3.05469%2011H5.07065C5.55588%2014.3923%208.47329%2017%2011.9998%2017C15.5262%2017%2018.4436%2014.3923%2018.9289%2011H20.9448C20.4837%2015.1716%2017.1714%2018.4839%2012.9998%2018.9451V23H10.9998V18.9451C6.82814%2018.4839%203.51584%2015.1716%203.05469%2011Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Volume Mute"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-4 right-44 bg-gluon-grey/60 p-2 rounded-2xl"
+        >
+          <img
+            class="size-6 cursor-pointer"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M4.7134%209.12811L4.46682%209.69379C4.28637%2010.1079%203.71357%2010.1079%203.53312%209.69379L3.28656%209.12811C2.84706%208.11947%202.05545%207.31641%201.06767%206.87708L0.308047%206.53922C-0.102682%206.35653%20-0.102682%205.75881%200.308047%205.57612L1.0252%205.25714C2.03838%204.80651%202.84417%203.97373%203.27612%202.93083L3.52932%202.31953C3.70578%201.89349%204.29417%201.89349%204.47063%202.31953L4.72382%202.93083C5.15577%203.97373%205.96158%204.80651%206.9748%205.25714L7.69188%205.57612C8.10271%205.75881%208.10271%206.35653%207.69188%206.53922L6.93228%206.87708C5.94451%207.31641%205.15288%208.11947%204.7134%209.12811ZM1%2019V12H3V18H15V6H10V4H16C16.5523%204%2017%204.44772%2017%205V9.2L22.2133%205.55071C22.4395%205.39235%2022.7513%205.44737%2022.9096%205.6736C22.9684%205.75764%2023%205.85774%2023%205.96033V18.0397C23%2018.3158%2022.7761%2018.5397%2022.5%2018.5397C22.3974%2018.5397%2022.2973%2018.5081%2022.2133%2018.4493L17%2014.8V19C17%2019.5523%2016.5523%2020%2016%2020H2C1.44772%2020%201%2019.5523%201%2019ZM17%2012.3587L21%2015.1587V8.84131L17%2011.6413V12.3587Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Recording"
+          />
+        </div>
+
+        <div class="absolute bottom-4 left-4 bg-gluon-grey/60 p-2 rounded-2xl">
+          <img
+            class="size-6 cursor-pointer"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M5%2010C3.9%2010%203%2010.9%203%2012C3%2013.1%203.9%2014%205%2014C6.1%2014%207%2013.1%207%2012C7%2010.9%206.1%2010%205%2010ZM19%2010C17.9%2010%2017%2010.9%2017%2012C17%2013.1%2017.9%2014%2019%2014C20.1%2014%2021%2013.1%2021%2012C21%2010.9%2020.1%2010%2019%2010ZM12%2010C10.9%2010%2010%2010.9%2010%2012C10%2013.1%2010.9%2014%2012%2014C13.1%2014%2014%2013.1%2014%2012C14%2010.9%2013.1%2010%2012%2010Z'%3e%3c/path%3e%3c/svg%3e"
+            alt="Recording"
+          />
+        </div>
+      </div>
+      <!-- MAIN SECTION CAMERA CELL end -->
+
+      <!-- MAIN SECTION SMART VIDEO BELL CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-4"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-green-500 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Smart Video Doorbell
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/night-owl/products"
+            >Night Owl DB-DBW2</a
+          >
+
+          <div
+            class="absolute bottom-2 left-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12"
+          >
+            <button
+              class="bg-orange size-5 rounded-full cursor-pointer ml-5 focus:bg-dark-grey focus:-translate-x-full transition duration-300 max-2xl:ml-4"
+            ></button>
+          </div>
+
+          <img
+            class="absolute bottom-0 -right-7 h-45 drop-shadow-xl drop-shadow-light-grey/5 max-2xl:h-40"
+            src="/homeguard-technology-project/assets/smart_video_doorbell_img-D_cv8f_R.png"
+            alt="Video Doorbell"
+          />
+        </div>
+      </div>
+      <!-- MAIN SECTION SMART VIDEO BELL CELL end -->
+
+      <!-- MAIN SECTION THERMOSTAT CELL start -->
+      <div
+        class="relative bg-slate-grey h-114 col-span-2 row-span-2 rounded-2xl flex flex-col overflow-hidden max-2xl:ml-6 max-xl:order-5"
+      >
+        <div class="flex items-center justify-between m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-green-500 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Thermostat
+            </p>
+          </div>
+
+          <div class="bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12">
+            <button
+              class="bg-orange size-5 rounded-full cursor-pointer ml-5 focus:bg-dark-grey focus:-translate-x-full transition duration-300 max-2xl:ml-4"
+            ></button>
+          </div>
+        </div>
+
+        <div
+          class="absolute left-15 top-20 flex flex-col gap-45 max-2xl:left-9 max-2xl:gap-40 max-2xl:top-22"
+        >
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M12%2023C16.1421%2023%2019.5%2019.6421%2019.5%2015.5C19.5%2014.6345%2019.2697%2013.8032%2019%2013.0296C17.3333%2014.6765%2016.0667%2015.5%2015.2%2015.5C19.1954%208.5%2017%205.5%2011%201.5C11.5%206.49951%208.20403%208.77375%206.86179%2010.0366C5.40786%2011.4045%204.5%2013.3462%204.5%2015.5C4.5%2019.6421%207.85786%2023%2012%2023ZM12.7094%205.23498C15.9511%207.98528%2015.9666%2010.1223%2013.463%2014.5086C12.702%2015.8419%2013.6648%2017.5%2015.2%2017.5C15.8884%2017.5%2016.5841%2017.2992%2017.3189%2016.9051C16.6979%2019.262%2014.5519%2021%2012%2021C8.96243%2021%206.5%2018.5376%206.5%2015.5C6.5%2013.9608%207.13279%2012.5276%208.23225%2011.4932C8.35826%2011.3747%208.99749%2010.8081%209.02477%2010.7836C9.44862%2010.4021%209.7978%2010.0663%2010.1429%209.69677C11.3733%208.37932%2012.2571%206.91631%2012.7094%205.23498Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Hot"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Hot</p>
+          </div>
+
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M11.9998%203.29814L14.4451%201.66794L15.5545%203.33204L12.9998%205.03517V10.2678L17.5313%207.65149L17.7289%204.58748L19.7247%204.7162L19.5356%207.64899L22.17%208.95159L21.2836%2010.7444L18.5313%209.38354L14.0001%2011.9996L18.5317%2014.616L21.284%2013.2551L22.1704%2015.0479L19.536%2016.3505L19.7251%2019.2833L17.7293%2019.412L17.5317%2016.348L12.9998%2013.7315V18.9648L15.5545%2020.6679L14.4451%2022.332L11.9998%2020.7018L9.55446%2022.332L8.44506%2020.6679L10.9998%2018.9648V13.7319L6.46786%2016.3484L6.27026%2019.4124L4.2744%2019.2836L4.46355%2016.3508L1.8291%2015.0483L2.71555%2013.2554L5.46786%2014.6163L10.0001%2011.9996L5.46824%209.38319L2.71594%2010.7441L1.82948%208.95124L4.46393%207.64864L4.27478%204.71585L6.27064%204.58713L6.46824%207.65113L10.9998%2010.2674V5.03517L8.44506%203.33204L9.55446%201.66794L11.9998%203.29814Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Cold"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Cold</p>
+          </div>
+        </div>
+
+        <div class="absolute left-7 top-40 flex flex-col gap-5 max-2xl:left-3">
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M10.5%2017H4V15H10.5C12.433%2015%2014%2016.567%2014%2018.5C14%2020.433%2012.433%2022%2010.5%2022C8.99957%2022%207.71966%2021.0559%207.22196%2019.7293L9.09513%2019.0268C9.30843%2019.5954%209.85696%2020%2010.5%2020C11.3284%2020%2012%2019.3284%2012%2018.5C12%2017.6716%2011.3284%2017%2010.5%2017ZM5%2011H18.5C20.433%2011%2022%2012.567%2022%2014.5C22%2016.433%2020.433%2018%2018.5%2018C16.9996%2018%2015.7197%2017.0559%2015.222%2015.7293L17.0951%2015.0268C17.3084%2015.5954%2017.857%2016%2018.5%2016C19.3284%2016%2020%2015.3284%2020%2014.5C20%2013.6716%2019.3284%2013%2018.5%2013H5C3.34315%2013%202%2011.6569%202%2010C2%208.34315%203.34315%207%205%207H13.5C14.3284%207%2015%206.32843%2015%205.5C15%204.67157%2014.3284%204%2013.5%204C12.857%204%2012.3084%204.40463%2012.0951%204.97317L10.222%204.27073C10.7197%202.94414%2011.9996%202%2013.5%202C15.433%202%2017%203.567%2017%205.5C17%207.433%2015.433%209%2013.5%209H5C4.44772%209%204%209.44772%204%2010C4%2010.5523%204.44772%2011%205%2011Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Hot"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Fan</p>
+          </div>
+
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M12%2022C6.47715%2022%202%2017.5228%202%2012C2%206.47715%206.47715%202%2012%202C17.5228%202%2022%206.47715%2022%2012C22%2017.5228%2017.5228%2022%2012%2022ZM12%2020C16.4183%2020%2020%2016.4183%2020%2012C20%207.58172%2016.4183%204%2012%204C7.58172%204%204%207.58172%204%2012C4%2016.4183%207.58172%2020%2012%2020ZM13%2012H17V14H11V7H13V12Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Cold"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Auto</p>
+          </div>
+        </div>
+
+        <div class="relative self-center max-2xl:mt-7">
+          <img
+            class="h-85 contrast-200 invert-100 opacity-20 max-2xl:h-67"
+            src="/homeguard-technology-project/assets/barometer_thermostat_img-BVOc6fST.png"
+            alt="Temperature"
+          />
+
+          <div
+            class="absolute z-20 top-23 left-22.5 bg-orange size-50 rounded-full shadow-2xl shadow-orange-700 flex flex-col items-center justify-center pointer-events-none max-2xl:size-45 max-2xl:top-15 max-2xl:left-15"
+          >
+            <div class="flex flex-col items-center font-semibold">
+              <p class="uppercase opacity-70 max-2xl:text-[0.9rem]">
+                Heating to
+              </p>
+              <p class="text-[3.3rem] max-2xl:text-[3rem]">21 &#8451;</p>
+              <p class="italic opacity-50 max-2xl:text-[0.9rem]">
+                Under 7 min.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="absolute top-15 left-15 bg-orange/95 size-65 rounded-full max-2xl:size-56 max-2xl:top-9.5 max-2xl:left-9"
+          >
+            <img
+              class="absolute top-3 left-39.5 size-8 rotate-203 max-2xl:size-7 max-2xl:top-1.5 max-2xl:left-34.5 max-2xl:rotate-202"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M11.9999%2013.1714L16.9497%208.22168L18.3639%209.63589L11.9999%2015.9999L5.63599%209.63589L7.0502%208.22168L11.9999%2013.1714Z'%3e%3c/path%3e%3c/svg%3e"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="absolute -bottom-12 left-30 flex items-center gap-5 max-2xl:-bottom-15 max-2xl:left-21"
+          >
+            <div
+              class="bg-orange size-14.5 rounded-full flex items-center justify-center font-semibold text-[2rem] cursor-pointer max-2xl:size-13 max-2xl:text-[1.8rem]"
+            >
+              <p class="mb-1.5">-</p>
+            </div>
+
+            <div
+              class="bg-orange size-14.5 rounded-full flex items-center justify-center font-semibold text-[2rem] cursor-pointer max-2xl:size-13 max-2xl:text-[1.8rem]"
+            >
+              +
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN SECTION THERMOSTAT CELL end -->
+
+      <!-- MAIN SECTION ENERGY CONSUMPTION CELL start -->
+      <div
+        class="relative bg-slate-grey h-114 col-span-2 row-span-2 rounded-2xl flex flex-col items-start pt-2 max-xl:order-3 max-xl:ml-13"
+      >
+        <div class="flex items-center w-full justify-between">
+          <p
+            class="m-3 text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]"
+          >
+            Energy Consumption
+            <span class="italic opacity-20 text-[0.9rem]">(/kWh)</span>
+          </p>
+
+          <div
+            class="flex items-center gap-3 mr-5.5 bg-gluon-grey px-2.5 py-2 rounded-2xl max-2xl:gap-2 max-2xl:mr-3 max-2xl:py-1.5 max-2xl:px-2 max-2xl:text-[0.9rem]"
+          >
+            <p
+              class="hover:bg-orange rounded-xl p-1 transition duration-300 cursor-pointer"
+            >
+              Hour
+            </p>
+
+            <p class="bg-orange rounded-xl p-1 cursor-pointer">Day</p>
+
+            <p
+              class="hover:bg-orange rounded-xl p-1 transition duration-300 cursor-pointer"
+            >
+              Month
+            </p>
+          </div>
+        </div>
+
+        <div class="ml-3 w-[96%] h-[75%]">
+          <div
+            class="flex flex-col items-start gap-2 mt-1 text-light-grey text-[0.8rem] pointer-events-none"
+          >
+            <div class="flex items-center gap-2.5">
+              <p>120</p>
+              <div
+                class="ml-0.5 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>110</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>100</p>
+              <div class="h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>90</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>80</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>70</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>60</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>50</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>40</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>30</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>20</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>10</p>
+              <div
+                class="ml-1.5 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>5</p>
+              <div
+                class="ml-3 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute z-20 bottom-3 left-15 flex items-end gap-9 pointer-events-none max-2xl:gap-6 max-2xl:left-14"
+        >
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-30 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Mon</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-37 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Tue</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-23.5 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Wed</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-51 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Thr</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-44 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Fri</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-58 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Sat</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-51 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Sun</p>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN SECTION ENERGY CONSUMPTION CELL end -->
+
+      <!-- MAIN SECTION SMART VACUUM CLEANER CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-7 max-xl:ml-13"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-green-500 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Vacuum Cleaner
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/tesla/products/smart-vacuum"
+            >Tesla Laser AI200</a
+          >
+        </div>
+
+        <div
+          class="absolute bottom-2 left-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12"
+        >
+          <button
+            class="bg-orange ml-5 size-5 rounded-full cursor-pointer focus:-translate-x-full focus:bg-dark-grey transition duration-300 max-2xl:ml-4"
+          ></button>
+        </div>
+
+        <img
+          class="absolute -right-10 -bottom-10 size-60 max-2xl:size-50 max-2xl:-bottom-8"
+          src="/homeguard-technology-project/assets/smart_vacuum_cleaner-vu2l8fht.webp"
+          alt="Vacuum Cleaner"
+        />
+      </div>
+      <!-- MAIN SECTION SMART VACUUM CLEANER CELL end -->
+
+      <!-- MAIN SECTION SPEAKER CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-8"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-dark-grey rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Speaker
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/bose/products/speaker"
+            >Bose Home Speaker <br />Triple Black</a
+          >
+        </div>
+
+        <div
+          class="absolute left-2 bottom-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12"
+        >
+          <button
+            class="bg-dark-grey size-5 rounded-full cursor-pointer focus:translate-x-full focus:bg-orange transition duration-300"
+          ></button>
+        </div>
+
+        <img
+          class="absolute size-60 -right-10 -bottom-5 drop-shadow-xl drop-shadow-light-grey/5 grayscale-50 max-2xl:size-50 max-2xl:-bottom-3"
+          src="/homeguard-technology-project/assets/speaker-lGmndf68.png"
+          alt="Speaker"
+        />
+      </div>
+      <!-- MAIN SECTION SPEAKER CELL end -->
+
+      <!-- MAIN SECTION SMART LIGHT CELL start -->
+      <div
+        class="flex flex-col relative bg-slate-grey h-56 col-span-2 rounded-2xl justify-between overflow-hidden max-xl:order-9"
+      >
+        <div class="flex items-center justify-between m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="bg-green-500 size-2 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Ambient Light
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2.5 mr-1 max-2xl:mr-2">
+            <div
+              class="bg-white rounded-full size-6 cursor-pointer max-2xl:size-5"
+            ></div>
+            <div
+              class="bg-[#ffae00] rounded-full size-6 cursor-pointer max-2xl:size-5"
+            ></div>
+          </div>
+        </div>
+
+        <!-- MAIN SECTION SMART LIGHT INTENSITY PICKER start -->
+        <div class="ml-2 mb-2">
+          <div class="flex items-center gap-1.5 mb-2.5">
+            <img
+              class="size-3.5 max-2xl:size-3"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M12%2018C8.68629%2018%206%2015.3137%206%2012C6%208.68629%208.68629%206%2012%206C15.3137%206%2018%208.68629%2018%2012C18%2015.3137%2015.3137%2018%2012%2018ZM12%2016C14.2091%2016%2016%2014.2091%2016%2012C16%209.79086%2014.2091%208%2012%208C9.79086%208%208%209.79086%208%2012C8%2014.2091%209.79086%2016%2012%2016ZM11%201H13V4H11V1ZM11%2020H13V23H11V20ZM3.51472%204.92893L4.92893%203.51472L7.05025%205.63604L5.63604%207.05025L3.51472%204.92893ZM16.9497%2018.364L18.364%2016.9497L20.4853%2019.0711L19.0711%2020.4853L16.9497%2018.364ZM19.0711%203.51472L20.4853%204.92893L18.364%207.05025L16.9497%205.63604L19.0711%203.51472ZM5.63604%2016.9497L7.05025%2018.364L4.92893%2020.4853L3.51472%2019.0711L5.63604%2016.9497ZM23%2011V13H20V11H23ZM4%2011V13H1V11H4Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Intensity"
+            />
+            <p class="max-2xl:text-[0.9rem]">Intensity</p>
+          </div>
+
+          <div
+            class="relative flex items-center bg-gluon-grey rounded-2xl h-3.5 w-[63%] max-2xl:w-[61%]"
+          >
+            <div
+              class="absolute left-0 bg-orange/80 rounded-l-2xl h-3.5 w-[76%]"
+            ></div>
+
+            <div
+              class="z-20 flex items-center bg-orange size-6.5 rounded-full ml-68 cursor-pointer max-2xl:ml-48"
+            >
+              <p class="text-[0.75rem] ml-0.5">68%</p>
+            </div>
+          </div>
+        </div>
+        <!-- MAIN SECTION SMART LIGHT INTENSITY PICKER end -->
+
+        <!-- MAIN SECTION SMART LIGHT COLOR PICKER start -->
+        <div class="ml-2 mb-16">
+          <div class="flex items-center gap-1.5 mb-2.5">
+            <img
+              class="size-3"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='rgba(255,255,255,1)'%3e%3cpath%20d='M6.00723%207.29726C6.00242%207.19876%205.99998%207.09965%205.99998%207C5.99998%203.68629%208.68627%201%2012%201C13.3496%201%2014.5977%201.44677%2015.6006%202.20007L14.3994%203.7992C13.731%203.29712%2012.9016%203%2012%203C11.7239%203%2011.4542%203.02798%2011.1938%203.08127C9.37112%203.45426%208%205.06701%208%207C8%209.03308%209.51679%2010.7119%2011.4805%2010.9666C12.5039%209.55847%2014.055%208.70883%2015.696%208.53306C16.3796%208.45983%2017.0792%208.50382%2017.7635%208.67248C18.3006%208.80481%2018.828%209.01404%2019.33%209.3039C22.1998%2010.9608%2023.183%2014.6303%2021.5262%2017.5C19.8693%2020.3698%2016.1998%2021.3531%2013.33%2019.6962C12.828%2019.4064%2012.3832%2019.0543%2012%2018.6554C11.6169%2019.0543%2011.172%2019.4064%2010.6699%2019.6963C7.80019%2021.3531%204.13065%2020.3699%202.47379%2017.5001C0.81694%2014.6304%201.80019%2010.9608%204.66995%209.30397C5.17193%209.01416%205.69919%208.80494%206.23623%208.67261C6.11278%208.24646%206.03531%207.80079%206.00955%207.3413L6.00723%207.29726ZM7.14979%2010.5328C6.64359%2010.5989%206.14138%2010.7638%205.66995%2011.036C3.75678%2012.1406%203.10128%2014.587%204.20585%2016.5001C5.31042%2018.4133%207.75678%2019.0688%209.66995%2017.9642C10.3021%2017.5993%2010.7949%2017.09%2011.1337%2016.5024C11.7429%2015.4457%2011.8532%2014.1391%2011.3649%2012.9669C10.9807%2012.9264%2010.6072%2012.8497%2010.2481%2012.7402C10.2028%2012.7264%2010.1577%2012.712%2010.1128%2012.6972C8.91238%2012.2997%207.87997%2011.5335%207.14979%2010.5328ZM13.1543%2016.9343C13.4647%2017.3396%2013.8586%2017.692%2014.33%2017.9642C16.2432%2019.0687%2018.6895%2018.4132%2019.7941%2016.5C20.2936%2015.635%2020.4332%2014.6609%2020.2593%2013.7511C20.0488%2012.6488%2019.3781%2011.6409%2018.33%2011.0357C17.6978%2010.6708%2017.0104%2010.4986%2016.3322%2010.499C15.1125%2010.4998%2013.9259%2011.0576%2013.1548%2012.0666C13.2661%2012.3165%2013.3588%2012.5707%2013.4336%2012.8277C13.4336%2012.8277%2013.4336%2012.8277%2013.4336%2012.8277C13.4774%2012.9785%2013.5151%2013.1302%2013.5467%2013.2825C13.5602%2013.3478%2013.5726%2013.4131%2013.5839%2013.4786C13.7871%2014.6567%2013.6297%2015.8611%2013.1543%2016.9343ZM18.5774%207C18.866%207.33402%2019.106%207.71371%2019.2866%208.12811L19.5331%208.69379C19.7136%209.10792%2020.2864%209.10792%2020.4668%208.69379L20.7134%208.12811C21.1529%207.11947%2021.9445%206.31641%2022.9323%205.87708L23.6919%205.53922C24.1027%205.35653%2024.1027%204.75881%2023.6919%204.57612L22.9748%204.25714C21.9616%203.80651%2021.1558%202.97373%2020.7238%201.93083L20.4706%201.31953C20.2942%200.893489%2019.7058%200.893489%2019.5293%201.31953L19.2761%201.93083C19.1965%202.12319%2019.1041%202.3084%2019%202.48538C18.5399%203.26793%2017.8515%203.88963%2017.0252%204.25714L16.308%204.57612C15.8973%204.75881%2015.8973%205.35653%2016.308%205.53922L17.0677%205.87708C17.6496%206.13591%2018.1635%206.521%2018.5774%207Z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Colors"
+            />
+            <p class="max-2xl:text-[0.9rem]">Color</p>
+          </div>
+          <div
+            class="relative bg-[url(image_icon/images/rainbow_palette.jpg)] h-3 w-[63%] bg-cover rounded-xl flex items-center max-2xl:w-[61%]"
+          >
+            <div
+              class="absolute left-10 size-5 bg-orange rounded-full cursor-pointer"
+            ></div>
+          </div>
+        </div>
+        <!-- MAIN SECTION SMART LIGHT COLOR PICKER end -->
+
+        <div
+          class="absolute left-2 bottom-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13"
+        >
+          <button
+            class="bg-orange rounded-full size-5 ml-5 cursor-pointer focus:bg-dark-grey focus:-translate-x-full transition duration-300"
+          ></button>
+        </div>
+
+        <img
+          class="absolute -bottom-75 -right-20 h-120 drop-shadow-xl drop-shadow-light-grey/5 brightness-100 max-2xl:h-100 max-2xl:-bottom-60 max-2xl:-right-17"
+          src="/homeguard-technology-project/assets/smart_lamp_img-ChDZ11Ho.png"
+          alt="Lamp"
+        />
+      </div>
+      <!-- MAIN SECTION SMART LIGHT CELL end -->
+    </main>
+    <!-- MAIN SECTION end -->
+  </body>
+</html>

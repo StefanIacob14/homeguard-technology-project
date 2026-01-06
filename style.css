@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: Outfit, Roboto, sans-serif;
+
+  /* Dark Void */
+  --color-black: #151419;
+
+  /* Gluon Grey */
+  --color-gluon-grey: #1b1b1e;
+
+  /* Liquid Lava */
+  --color-orange: #f56e0f;
+
+  /* Slate Grey */
+  --color-slate-grey: #262626;
+
+  /* Dusty Grey */
+  --color-dark-grey: #878787;
+
+  /* Snow */
+  --color-light-grey: #fbfbfb;
+}

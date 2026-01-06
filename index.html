@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts "OUTFIT" + "Roboto" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="image_icon/logo/HomeGuard_Technology_logo_tab.png" />
+    <title>Smart Home Dashboard</title>
+  </head>
+
+  <body
+    class="bg-gluon-grey font-outfit text-light-grey max-2xl:bg-white max-xl:bg-red-500 max-lg:bg-yellow-500 max-md:bg-blue-500 max-sm:bg-pink-500"
+  >
+    <!-- HEADER SECTION start -->
+    <header class="flex items-center justify-between m-5">
+      <!-- HEADER FIRST SECTION start -->
+      <!-- HEADER LOGO start -->
+      <div class="flex flex-1 items-center">
+        <a href="www.homeguardtech.ro">
+          <img
+            class="w-35 cursor-pointer max-2xl:w-30"
+            src="image_icon/logo/HomeGuard_Technology_logo_white_orange.png"
+            alt="HomeGuard Technology Logo"
+          />
+        </a>
+        <!-- HEADER LOGO end -->
+      </div>
+      <!-- HEADER FIRST SECTION end -->
+
+      <!-- HEADER MIDDLE SECTION start -->
+      <div
+        class="flex items-center gap-7 bg-slate-grey p-2 rounded-2xl px-4 max-2xl:gap-5 max-xl:gap-3"
+      >
+        <button
+          class="bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/dashboard">Dashboard</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/rooms">Rooms</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/devices">Devices</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/family">Family</a>
+        </button>
+
+        <button
+          class="hover:bg-orange p-2.5 rounded-xl transition duration-300 cursor-pointer"
+        >
+          <a class="text-light-grey" href="/reports">Reports</a>
+        </button>
+      </div>
+      <!-- HEADER MIDDLE SECTION end -->
+
+      <!-- HEADER RIGHT SECTION start -->
+      <div class="flex flex-1 items-center justify-end gap-5 max-xl:gap-3">
+        <button
+          class="bg-slate-grey p-3.5 rounded-full cursor-pointer hover:bg-orange transition duration-300 max-xl:p-2.5"
+        >
+          <a href="/mail">
+            <img
+              class="size-5 max-xl:size-4.5"
+              src="image_icon/icons/header_icons/mail_icon_white.svg"
+              alt="Mail"
+            />
+          </a>
+        </button>
+
+        <button
+          class="relative bg-slate-grey p-3.5 rounded-full cursor-pointer hover:bg-orange transition duration-300 max-xl:p-2.5"
+        >
+          <a href="/notifications">
+            <img
+              class="size-5 max-xl:size-5"
+              src="image_icon/icons/header_icons/notifications_icon_white.svg"
+              alt="Notifications"
+            />
+          </a>
+
+          <div
+            class="absolute top-3 right-3.5 bg-red-500 rounded-full size-2 cursor-pointer max-xl:size-1.5 max-xl:top-2.5 max-xl:right-2.5"
+          ></div>
+        </button>
+
+        <button
+          class="bg-orange py-2 px-3 rounded-2xl inset-shadow-[-3px_-3px_5px] inset-shadow-black/50 hover:inset-shadow-[-4.5px_-4.5px_5px] transition duration-300 cursor-pointer max-xl:hidden"
+        >
+          <a class="flex items-center max-xl:text-[0.8rem]" href="/new-device"
+            ><span class="text-2xl mr-1.5 max-xl:mr-1 max-xl:text-[0.9rem]"
+              >+</span
+            >Add Device</a
+          >
+        </button>
+
+        <!-- HEADER RIGHT SECTION User Profile start -->
+        <div
+          class="flex items-center justify-between gap-3 bg-slate-grey rounded-2xl px-2.5 py-1.5 hover:bg-orange transition duration-300 max-xl:gap-2"
+        >
+          <img
+            class="size-11 rounded-xl cursor-pointer max-xl:size-10"
+            src="image_icon/images/beautiful_woman_portret.jpg"
+            alt="User Profile"
+          />
+          <div>
+            <p
+              class="font-semibold cursor-pointer hover:underline max-xl:text-[0.9rem]"
+            >
+              Aliss Parker
+            </p>
+            <p
+              class="font-light text-[0.8rem] cursor-pointer hover:underline max-xl:text-[0.7rem]"
+            >
+              @aliss_park97
+            </p>
+          </div>
+          <img
+            class="size-5 cursor-pointer hover:scale-110 transition duration-150"
+            src="image_icon/icons/header_icons/down_arrow_icon_white.svg"
+            alt="More Details"
+          />
+        </div>
+        <!-- HEADER RIGHT SECTION User Profile end -->
+      </div>
+      <!-- HEADER RIGHT SECTION end -->
+    </header>
+    <!-- HEADER SECTION end -->
+
+    <!-- ASIDE SECTION start -->
+    <aside
+      class="absolute -z-10 left-0 bottom-0 top-0 w-45.5 pt-26 pb-5 bg-slate-grey flex flex-col items-center justify-between max-2xl:w-40"
+    >
+      <div
+        class="flex flex-col gap-10 w-40 border-t border-t-dark-grey/25 pt-10 px-3"
+      >
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="image_icon/icons/aside_icons/connection_icon_white.svg"
+            alt="Wi-Fi"
+          />
+          <a href="/connection">Connection</a>
+        </div>
+
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="image_icon/icons/aside_icons/security_icon_white.svg"
+            alt="Security"
+          />
+          <a href="/security">Security</a>
+        </div>
+
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="image_icon/icons/aside_icons/events_icon_white.svg"
+            alt="Events"
+          />
+          <a href="/events">Events</a>
+        </div>
+
+        <div
+          class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+        >
+          <img
+            class="size-5"
+            src="image_icon/icons/aside_icons/statistics_icon_white.svg"
+            alt="Statistics"
+          />
+          <a href="/statistics">Statistics</a>
+        </div>
+
+        <div class="flex flex-col gap-10 mt-10">
+          <div
+            class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              class="size-5"
+              src="image_icon/icons/aside_icons/settings_icon_white.svg"
+              alt="Settings"
+            />
+            <a href="/settings">Settings</a>
+          </div>
+
+          <div
+            class="flex items-center gap-2 p-2 hover:bg-orange rounded-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              class="size-5"
+              src="image_icon/icons/aside_icons/support_icon_white.svg"
+              alt="Support"
+            />
+            <a href="/support">Support</a>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="bg-orange py-2 px-3 rounded-2xl inset-shadow-[-3px_-3px_5px] inset-shadow-black/50 hover:inset-shadow-[-4.5px_-4.5px_5px] transition duration-300 cursor-pointer invisible max-xl:visible max-xl:mt-65"
+      >
+        <a class="flex items-center max-xl:text-[0.8rem]" href="/new-device"
+          ><span class="text-2xl mr-1.5 max-xl:mr-1 max-xl:text-[0.9rem]"
+            >+</span
+          >Add Device</a
+        >
+      </button>
+
+      <div
+        class="flex items-center justify-between gap-4 p-1.5 px-2.5 border-2 border-dark-grey/25 rounded-2xl max-xl:px-3.5 max-xl:gap-5"
+      >
+        <img
+          class="size-8 bg-orange p-2 rounded-xl cursor-pointer inset-shadow-[-2px_-2px_5px] inset-shadow-black/50"
+          src="image_icon/icons/aside_icons/dark_mode_icon_white.svg"
+          alt="Dark Mode"
+        />
+        <img
+          class="size-5 cursor-pointer"
+          src="image_icon/icons/aside_icons/light_mode_icon_white.svg"
+          alt="Light Mode"
+        />
+      </div>
+    </aside>
+    <!-- ASIDE SECTION end -->
+
+    <!-- MAIN SECTION start -->
+    <main
+      class="absolute right-5.5 bottom-5 h-[88.5%] w-[89%] grid grid-cols-6 gap-2 max-xl:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]"
+    >
+      <!-- MAIN SECTION WELCOME / WEATHER CELL start -->
+      <div
+        class="flex flex-col justify-between items-start bg-slate-grey h-114 col-span-2 row-span-2 rounded-2xl max-2xl:ml-6 max-xl:ml-13 max-xl:order-1"
+      >
+        <div
+          class="text-5xl leading-13 mx-5 mt-3 pointer-events-none max-2xl:text-4xl"
+        >
+          <p>Good evening, Aliss!</p>
+          <p class="text-[1.2rem] italic max-2xl:text-[1.1rem]">
+            "We hope you have a wonderful day!"
+          </p>
+        </div>
+
+        <!-- MAIN SECTION WEATHER start -->
+        <div
+          class="relative flex flex-col justify-evenly bg-gluon-grey self-center m-5 w-[93%] h-[70%] rounded-2xl max-2xl:w-[96%]"
+        >
+          <a class="absolute top-1.5 right-1.5" href="/weather">
+            <img
+              class="size-5 rotate-225 opacity-25 cursor-pointer hover:opacity-100 transition duration-300"
+              src="image_icon/icons/header_icons/down_arrow_icon_white.svg"
+              alt="More Details"
+            />
+          </a>
+
+          <div class="flex items-center justify-evenly gap-1.5">
+            <div class="flex flex-col gap-1.5">
+              <img
+                class="size-14 self-center max-2xl:size-12"
+                src="image_icon/icons/main_icons/cloud_windy_icon_white.svg"
+                alt="Cloud Windy"
+              />
+              <p
+                class="pointer-events-none max-2xl:text-[0.9rem] max-xl:text-[0.8rem]"
+              >
+                Cloud Windy
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <div class="flex items-center gap-1.5">
+                <img
+                  class="size-13 max-2xl:size-11"
+                  src="image_icon/icons/main_icons/water_percent_icon_white.svg"
+                  alt="Humidity"
+                />
+                <p
+                  class="text-4xl font-semibold pointer-events-none max-2xl:text-3xl"
+                >
+                  65%
+                </p>
+              </div>
+              <p
+                class="self-center pointer-events-none max-2xl:text-[0.9rem] max-xl:text-[0.8rem]"
+              >
+                Humidity
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <p
+                class="text-5xl font-semibold self-center pointer-events-none max-2xl:text-4xl"
+              >
+                7 &#8451;
+              </p>
+              <div class="flex items-center gap-1.5">
+                <img
+                  class="size-4"
+                  src="image_icon/icons/main_icons/map_pin_icon_white.svg"
+                  alt="Location"
+                />
+                <a href="/weather/montana/helena">
+                  <p
+                    class="cursor-pointer hover:underline max-2xl:text-[0.9rem] max-xl:text-[0.8rem]"
+                  >
+                    Helena, Montana
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAIN SECTION WEATHER ON HOURS start -->
+          <div class="flex items-center gap-1.5 self-center max-xl:gap-2">
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">12 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="image_icon/icons/main_icons/cloud_windy_icon_white.svg"
+                alt="Cloud Windy"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">7 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">13 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="image_icon/icons/main_icons/cloud_windy_icon_white.svg"
+                alt="Cloud Windy"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">7 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">14 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="image_icon/icons/main_icons/cloud_windy_icon_white.svg"
+                alt="Cloud Windy"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">6 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">15 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="image_icon/icons/main_icons/heavy_rain_icon_white.svg"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">6 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15"
+            >
+              <p class="max-2xl:text-[0.9rem]">16 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="image_icon/icons/main_icons/heavy_rain_icon_white.svg"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">5 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:w-15 max-xl:hidden"
+            >
+              <p class="max-2xl:text-[0.9rem]">17 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="image_icon/icons/main_icons/cloudy_icon_white.svg"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">5 &#8451;</p>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-around bg-slate-grey rounded-2xl w-17.5 h-37 cursor-pointer max-2xl:hidden"
+            >
+              <p class="max-2xl:text-[0.9rem]">18 AM</p>
+              <img
+                class="size-10 max-2xl:size-8"
+                src="image_icon/icons/main_icons/cloudy_icon_white.svg"
+                alt="Heavy Rain"
+              />
+              <p class="text-[1.2rem] max-2xl:text-[1.1rem]">6 &#8451;</p>
+            </div>
+          </div>
+          <!-- MAIN SECTION WEATHER ON HOURS end -->
+        </div>
+        <!-- MAIN SECTION WEATHER end -->
+      </div>
+      <!-- MAIN SECTION WELCOME / WEATHER CELL end -->
+
+      <!-- MAIN SECTION FRONT DOOR LOCKER CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-6"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="bg-green-500 size-2 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Front Door
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/okos/products"
+            >Smart Door Lock <br />
+            OKOS OK31</a
+          >
+        </div>
+
+        <div
+          class="absolute bottom-2 left-2 flex items-center gap-2 max-2xl:gap-1"
+        >
+          <div class="bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12">
+            <button
+              class="bg-orange ml-5 size-5 rounded-full cursor-pointer focus:bg-dark-grey focus:-translate-x-full transition duration-300 max-2xl:ml-4"
+            ></button>
+          </div>
+
+          <p
+            class="text-[0.9rem] opacity-50 italic pointer-events-none max-2xl:text-[0.8rem]"
+          >
+            *Locked
+          </p>
+        </div>
+
+        <img
+          class="absolute bottom-2 right-2 h-45 drop-shadow-xl drop-shadow-light-grey/5 max-2xl:h-33 max-2xl:bottom-4 max-2xl:right-1"
+          src="image_icon/images/smart_door_locker_img.png"
+          alt="Door Locker"
+        />
+      </div>
+      <!-- MAIN SECTION FRONT DOOR LOCKER CELL end -->
+
+      <!-- MAIN SECTION CAMERA CELL start -->
+      <div
+        class="relative bg-slate-grey h-114 col-span-3 row-span-2 rounded-2xl overflow-hidden max-xl:order-2"
+      >
+        <div
+          class="bg-[url(image_icon/images/modern_living_room_interior.jpg)] bg-cover h-full w-full bg-bottom"
+        ></div>
+
+        <div
+          class="absolute top-4 left-4 flex items-center gap-1.5 bg-gluon-grey/60 py-2 px-3 rounded-2xl"
+        >
+          <div class="bg-red-500 rounded-full size-2 animate-pulse"></div>
+          <p
+            class="font-bold text-light-grey text-[1.1rem] pointer-events-none"
+          >
+            Live
+          </p>
+        </div>
+
+        <div class="absolute top-4 right-4 bg-gluon-grey/60 p-3 rounded-2xl">
+          <img
+            class="size-5 cursor-pointer"
+            src="image_icon/icons/main_icons/fullscreen_icon_white.svg"
+            alt="Full Screen"
+          />
+        </div>
+
+        <div class="absolute bottom-4 right-4 bg-gluon-grey/60 p-2 rounded-2xl">
+          <img
+            class="size-8 cursor-pointer"
+            src="image_icon/icons/main_icons/move_console_icon_white.svg"
+            alt="Move"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-4 right-20 bg-gluon-grey/60 p-2 rounded-2xl"
+        >
+          <img
+            class="size-6 cursor-pointer"
+            src="image_icon/icons/main_icons/volume_mute_icon_white.svg"
+            alt="Microphone"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-4 right-32 bg-gluon-grey/60 p-2 rounded-2xl"
+        >
+          <img
+            class="size-6 cursor-pointer"
+            src="image_icon/icons/main_icons/microphone_icon_white.svg"
+            alt="Volume Mute"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-4 right-44 bg-gluon-grey/60 p-2 rounded-2xl"
+        >
+          <img
+            class="size-6 cursor-pointer"
+            src="image_icon/icons/main_icons/video_recording_icon_white.svg"
+            alt="Recording"
+          />
+        </div>
+
+        <div class="absolute bottom-4 left-4 bg-gluon-grey/60 p-2 rounded-2xl">
+          <img
+            class="size-6 cursor-pointer"
+            src="image_icon/icons/main_icons/options_icon_white.svg"
+            alt="Recording"
+          />
+        </div>
+      </div>
+      <!-- MAIN SECTION CAMERA CELL end -->
+
+      <!-- MAIN SECTION SMART VIDEO BELL CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-4"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-green-500 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Smart Video Doorbell
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/night-owl/products"
+            >Night Owl DB-DBW2</a
+          >
+
+          <div
+            class="absolute bottom-2 left-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12"
+          >
+            <button
+              class="bg-orange size-5 rounded-full cursor-pointer ml-5 focus:bg-dark-grey focus:-translate-x-full transition duration-300 max-2xl:ml-4"
+            ></button>
+          </div>
+
+          <img
+            class="absolute bottom-0 -right-7 h-45 drop-shadow-xl drop-shadow-light-grey/5 max-2xl:h-40"
+            src="image_icon/images/smart_video_doorbell_img.png"
+            alt="Video Doorbell"
+          />
+        </div>
+      </div>
+      <!-- MAIN SECTION SMART VIDEO BELL CELL end -->
+
+      <!-- MAIN SECTION THERMOSTAT CELL start -->
+      <div
+        class="relative bg-slate-grey h-114 col-span-2 row-span-2 rounded-2xl flex flex-col overflow-hidden max-2xl:ml-6 max-xl:order-5"
+      >
+        <div class="flex items-center justify-between m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-green-500 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Thermostat
+            </p>
+          </div>
+
+          <div class="bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12">
+            <button
+              class="bg-orange size-5 rounded-full cursor-pointer ml-5 focus:bg-dark-grey focus:-translate-x-full transition duration-300 max-2xl:ml-4"
+            ></button>
+          </div>
+        </div>
+
+        <div
+          class="absolute left-15 top-20 flex flex-col gap-45 max-2xl:left-9 max-2xl:gap-40 max-2xl:top-22"
+        >
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="image_icon/icons/main_icons/hot_icon_white.svg"
+              alt="Hot"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Hot</p>
+          </div>
+
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="image_icon/icons/main_icons/cold_icon_white.svg"
+              alt="Cold"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Cold</p>
+          </div>
+        </div>
+
+        <div class="absolute left-7 top-40 flex flex-col gap-5 max-2xl:left-3">
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="image_icon/icons/main_icons/fan_speed_icon_white.svg"
+              alt="Hot"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Fan</p>
+          </div>
+
+          <div
+            class="bg-orange size-16 rounded-full flex flex-col items-center justify-center cursor-pointer max-2xl:size-14"
+          >
+            <img
+              class="size-5 max-2xl:size-4"
+              src="image_icon/icons/main_icons/auto_icon_white.svg"
+              alt="Cold"
+            />
+            <p class="font-semibold max-2xl:text-[0.9rem]">Auto</p>
+          </div>
+        </div>
+
+        <div class="relative self-center max-2xl:mt-7">
+          <img
+            class="h-85 contrast-200 invert-100 opacity-20 max-2xl:h-67"
+            src="image_icon/images/barometer_thermostat_img.png"
+            alt="Temperature"
+          />
+
+          <div
+            class="absolute z-20 top-23 left-22.5 bg-orange size-50 rounded-full shadow-2xl shadow-orange-700 flex flex-col items-center justify-center pointer-events-none max-2xl:size-45 max-2xl:top-15 max-2xl:left-15"
+          >
+            <div class="flex flex-col items-center font-semibold">
+              <p class="uppercase opacity-70 max-2xl:text-[0.9rem]">
+                Heating to
+              </p>
+              <p class="text-[3.3rem] max-2xl:text-[3rem]">21 &#8451;</p>
+              <p class="italic opacity-50 max-2xl:text-[0.9rem]">
+                Under 7 min.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="absolute top-15 left-15 bg-orange/95 size-65 rounded-full max-2xl:size-56 max-2xl:top-9.5 max-2xl:left-9"
+          >
+            <img
+              class="absolute top-3 left-39.5 size-8 rotate-203 max-2xl:size-7 max-2xl:top-1.5 max-2xl:left-34.5 max-2xl:rotate-202"
+              src="image_icon/icons/header_icons/down_arrow_icon_white.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="absolute -bottom-12 left-30 flex items-center gap-5 max-2xl:-bottom-15 max-2xl:left-21"
+          >
+            <div
+              class="bg-orange size-14.5 rounded-full flex items-center justify-center font-semibold text-[2rem] cursor-pointer max-2xl:size-13 max-2xl:text-[1.8rem]"
+            >
+              <p class="mb-1.5">-</p>
+            </div>
+
+            <div
+              class="bg-orange size-14.5 rounded-full flex items-center justify-center font-semibold text-[2rem] cursor-pointer max-2xl:size-13 max-2xl:text-[1.8rem]"
+            >
+              +
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN SECTION THERMOSTAT CELL end -->
+
+      <!-- MAIN SECTION ENERGY CONSUMPTION CELL start -->
+      <div
+        class="relative bg-slate-grey h-114 col-span-2 row-span-2 rounded-2xl flex flex-col items-start pt-2 max-xl:order-3 max-xl:ml-13"
+      >
+        <div class="flex items-center w-full justify-between">
+          <p
+            class="m-3 text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]"
+          >
+            Energy Consumption
+            <span class="italic opacity-20 text-[0.9rem]">(/kWh)</span>
+          </p>
+
+          <div
+            class="flex items-center gap-3 mr-5.5 bg-gluon-grey px-2.5 py-2 rounded-2xl max-2xl:gap-2 max-2xl:mr-3 max-2xl:py-1.5 max-2xl:px-2 max-2xl:text-[0.9rem]"
+          >
+            <p
+              class="hover:bg-orange rounded-xl p-1 transition duration-300 cursor-pointer"
+            >
+              Hour
+            </p>
+
+            <p class="bg-orange rounded-xl p-1 cursor-pointer">Day</p>
+
+            <p
+              class="hover:bg-orange rounded-xl p-1 transition duration-300 cursor-pointer"
+            >
+              Month
+            </p>
+          </div>
+        </div>
+
+        <div class="ml-3 w-[96%] h-[75%]">
+          <div
+            class="flex flex-col items-start gap-2 mt-1 text-light-grey text-[0.8rem] pointer-events-none"
+          >
+            <div class="flex items-center gap-2.5">
+              <p>120</p>
+              <div
+                class="ml-0.5 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>110</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>100</p>
+              <div class="h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>90</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>80</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>70</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>60</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>50</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>40</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>30</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>20</p>
+              <div
+                class="ml-1 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>10</p>
+              <div
+                class="ml-1.5 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <p>5</p>
+              <div
+                class="ml-3 h-0.5 w-135 bg-light-grey/5 max-2xl:w-99.5"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute z-20 bottom-3 left-15 flex items-end gap-9 pointer-events-none max-2xl:gap-6 max-2xl:left-14"
+        >
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-30 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Mon</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-37 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Tue</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-23.5 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Wed</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-51 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Thr</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-44 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Fri</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-58 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Sat</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5">
+            <div
+              class="h-51 w-10 bg-orange rounded-2xl inset-shadow-[-5px_-5px_10px] inset-shadow-orange-600 max-2xl:w-8 max-2xl:rounded-xl"
+            ></div>
+            <p class="font-semibold max-2xl:text-[0.9rem]">Sun</p>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN SECTION ENERGY CONSUMPTION CELL end -->
+
+      <!-- MAIN SECTION SMART VACUUM CLEANER CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-7 max-xl:ml-13"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-green-500 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Vacuum Cleaner
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/tesla/products/smart-vacuum"
+            >Tesla Laser AI200</a
+          >
+        </div>
+
+        <div
+          class="absolute bottom-2 left-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12"
+        >
+          <button
+            class="bg-orange ml-5 size-5 rounded-full cursor-pointer focus:-translate-x-full focus:bg-dark-grey transition duration-300 max-2xl:ml-4"
+          ></button>
+        </div>
+
+        <img
+          class="absolute -right-10 -bottom-10 size-60 max-2xl:size-50 max-2xl:-bottom-8"
+          src="image_icon/images/smart_vacuum_cleaner.webp"
+          alt="Vacuum Cleaner"
+        />
+      </div>
+      <!-- MAIN SECTION SMART VACUUM CLEANER CELL end -->
+
+      <!-- MAIN SECTION SPEAKER CELL start -->
+      <div
+        class="relative bg-slate-grey h-56 rounded-2xl overflow-hidden max-xl:order-8"
+      >
+        <div class="m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="size-2 bg-dark-grey rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Speaker
+            </p>
+          </div>
+
+          <a
+            class="text-[0.9rem] opacity-50 italic cursor-pointer hover:opacity-100 transition duration-150 max-2xl:text-[0.8rem]"
+            href="/bose/products/speaker"
+            >Bose Home Speaker <br />Triple Black</a
+          >
+        </div>
+
+        <div
+          class="absolute left-2 bottom-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13 max-2xl:w-12"
+        >
+          <button
+            class="bg-dark-grey size-5 rounded-full cursor-pointer focus:translate-x-full focus:bg-orange transition duration-300"
+          ></button>
+        </div>
+
+        <img
+          class="absolute size-60 -right-10 -bottom-5 drop-shadow-xl drop-shadow-light-grey/5 grayscale-50 max-2xl:size-50 max-2xl:-bottom-3"
+          src="image_icon/images/speaker.png"
+          alt="Speaker"
+        />
+      </div>
+      <!-- MAIN SECTION SPEAKER CELL end -->
+
+      <!-- MAIN SECTION SMART LIGHT CELL start -->
+      <div
+        class="flex flex-col relative bg-slate-grey h-56 col-span-2 rounded-2xl justify-between overflow-hidden max-xl:order-9"
+      >
+        <div class="flex items-center justify-between m-2">
+          <div class="flex items-center gap-1.5">
+            <div class="bg-green-500 size-2 rounded-full"></div>
+            <p class="text-[1.2rem] pointer-events-none max-2xl:text-[1.1rem]">
+              Ambient Light
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2.5 mr-1 max-2xl:mr-2">
+            <div
+              class="bg-white rounded-full size-6 cursor-pointer max-2xl:size-5"
+            ></div>
+            <div
+              class="bg-[#ffae00] rounded-full size-6 cursor-pointer max-2xl:size-5"
+            ></div>
+          </div>
+        </div>
+
+        <!-- MAIN SECTION SMART LIGHT INTENSITY PICKER start -->
+        <div class="ml-2 mb-2">
+          <div class="flex items-center gap-1.5 mb-2.5">
+            <img
+              class="size-3.5 max-2xl:size-3"
+              src="image_icon/icons/main_icons/intensity_icon_white.svg"
+              alt="Intensity"
+            />
+            <p class="max-2xl:text-[0.9rem]">Intensity</p>
+          </div>
+
+          <div
+            class="relative flex items-center bg-gluon-grey rounded-2xl h-3.5 w-[63%] max-2xl:w-[61%]"
+          >
+            <div
+              class="absolute left-0 bg-orange/80 rounded-l-2xl h-3.5 w-[76%]"
+            ></div>
+
+            <div
+              class="z-20 flex items-center bg-orange size-6.5 rounded-full ml-68 cursor-pointer max-2xl:ml-48"
+            >
+              <p class="text-[0.75rem] ml-0.5">68%</p>
+            </div>
+          </div>
+        </div>
+        <!-- MAIN SECTION SMART LIGHT INTENSITY PICKER end -->
+
+        <!-- MAIN SECTION SMART LIGHT COLOR PICKER start -->
+        <div class="ml-2 mb-16">
+          <div class="flex items-center gap-1.5 mb-2.5">
+            <img
+              class="size-3"
+              src="image_icon/icons/main_icons/color_filter_icon_white.svg"
+              alt="Colors"
+            />
+            <p class="max-2xl:text-[0.9rem]">Color</p>
+          </div>
+          <div
+            class="relative bg-[url(image_icon/images/rainbow_palette.jpg)] h-3 w-[63%] bg-cover rounded-xl flex items-center max-2xl:w-[61%]"
+          >
+            <div
+              class="absolute left-10 size-5 bg-orange rounded-full cursor-pointer"
+            ></div>
+          </div>
+        </div>
+        <!-- MAIN SECTION SMART LIGHT COLOR PICKER end -->
+
+        <div
+          class="absolute left-2 bottom-2 bg-gluon-grey rounded-2xl p-1.5 h-8 w-13"
+        >
+          <button
+            class="bg-orange rounded-full size-5 ml-5 cursor-pointer focus:bg-dark-grey focus:-translate-x-full transition duration-300"
+          ></button>
+        </div>
+
+        <img
+          class="absolute -bottom-75 -right-20 h-120 drop-shadow-xl drop-shadow-light-grey/5 brightness-100 max-2xl:h-100 max-2xl:-bottom-60 max-2xl:-right-17"
+          src="image_icon/images/smart_lamp_img.png"
+          alt="Lamp"
+        />
+      </div>
+      <!-- MAIN SECTION SMART LIGHT CELL end -->
+    </main>
+    <!-- MAIN SECTION end -->
+  </body>
+</html>
